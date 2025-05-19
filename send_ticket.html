@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MIS HELP PAGE | Send Ticket</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+   		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+ 		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+<div class="container">
+		<div class="header">
+		<img class="img" style="float: left;" src="Images/logo.jpg";/>
+        <a href="javascript:history.go(-1)">
+		<img class="img" style="float: right;" src="Images/back.jpg" href="index.html";/>
+        </a>
+        
+
+		<div class="clr"></div>               
+	</div>
+      <form action="_createTicket.php" method="post" class="contact">
+<div class='container2'>
+  	<header>
+  		  <h1>Send us a Ticket!</h1>
+		  </header>
+ 	 <div class='contact'>
+ 		   <input class='full' placeholder='Problem Name ex. Printer Problem...' type='text' name="issue" required >
+	 </div>
+ 	 <div class='name'>
+  		  <input class='first' placeholder='First Name' type='text' name="fname" required>
+  		  <input class='last' placeholder='Last Name' type='text' name="lname" required>
+ 	 </div>
+ 	 <div class='contact'>
+ 		   <input class='full' placeholder='E-mail Address' type='email' name="email" required>
+	 </div>
+ 	 <div class='contact'>
+ 		   <select class='first required' name="dept">
+           		<option value="" selected>Please select a department</option>
+                <option value="1">College of Education</option>
+           		<option value="2">College of Agriculture</option>
+           		<option value="3">College of Forestry</option>
+                <option value="4">College of Hospitality and Tourism</option>
+           		<option value="5">College of Arts and Science</option>
+           		<option value="6">Registrar's Office</option>
+                <option value="7">Administrative Office</option>
+           		<option value="8">Cashier's/Accounting Office</option>
+           		<option value="9">College of Technology and Engineering</option>
+           </select>
+	 </div>
+ 	 <div class='contact'>
+ 		   <input class='full' placeholder='Contact Number' type='text' name="phone_no" required>
+	 </div>
+ 	 <div class='contact'>
+ 		   <select class='first required' name="priority">
+           		<option value="" selected>Priority Type. Please be honest.</option>
+           		<option value="1">Normal</option>
+           		<option value="1">High</option>
+           		<option value="1">Urgent</option>
+           </select>
+	 </div>
+ 	 <div class='message' required>
+ 		   <textarea placeholder='Problem Description Here!' name="desc"></textarea>
+ 	 </div>
+ 	 <footer>
+    <button class="send">Send Ticket</button>
+ 	 </footer>
+     </form>
+</div>  
+  </body>
+</html>
